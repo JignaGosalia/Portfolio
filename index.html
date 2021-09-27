@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cursive;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(100, 149, 237);
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #F08080;
+  padding: 10px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  color:rgb(0, 0, 0);
+  height: 290px; /* only for demonstration, should be removed */
+  background-image:url("1.png");
+  background-repeat:no-repeat;
+  background-size: 205px;
+ 
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(100, 149, 237);
+  padding: 10px;
+  text-align: center;
+  color: rgb(15, 3, 3);
+  font-size:25px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align: center;"><marquee>Resume</marquee></h2>
+<hr></hr>
+
+
+
+<header>
+  <h2>Jigna Gosalia</h2>
+</header>
+
+<section>
+ <!-- <nav>
+    <ul>
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="Portfolio.html">Hmmmmmmm</a></li>
+    
+    </ul>
+  </nav>
+-->
+  <article> 
+    <h1><u>About Me</u></h1>
+    <p>Hey There!<br>I am Jigna K. Gosalia.<br> I am currently studying at Goa Engineering College (GEC).
+      <br>To know more click more<br><br><a href="page2.html"><img src="2.jfif" width="5%" ></a>
+      </p>  
+        
+  </article>
+</section>
+
+<footer>
+  <p>Cloud Computing Lab</p>
+</footer>
+
+</body>
+</html>
